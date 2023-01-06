@@ -1,0 +1,90 @@
+/*секция наша команда */
+.team {
+    padding: 95px 0;
+
+    margin: 0 auto;
+    background-color: var(--background-button);
+
+    &__head {
+        margin: 0 0 50px;
+        font-size: 36px;
+        line-height: 1.17;
+        text-align: center;
+        letter-spacing: 0.03em;
+        font-weight: 700;
+    }
+
+    &__list {
+        display: flex;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    &__card {
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0px 4px 4px var(--color-shadow);
+        background-color: var(--text-color-active);
+    }
+
+    &__card-name {
+        margin: 0;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.2;
+        text-align: center;
+        letter-spacing: 0.03em;
+    }
+
+    &__card-profession {
+        margin: 0;
+        color: var(--text-color);
+        font-size: 16px;
+        line-height: 1.2;
+        text-align: center;
+        letter-spacing: 0.03em;
+    }
+
+    &__card-container {
+        padding: 30px 0;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    &__card-social-list {
+        width: 0 auto;
+        height: 44px;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    &__card-social-link {
+        width: 44px;
+        height: 44px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        fill: var(--color-fill-icons);
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+            fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    }
+
+    &__card-social-link:focus,
+    &__card-social-link:hover {
+        background-color: var(--text-color-buttonlink);
+        fill: var(--text-color-active);
+    }
+}
+
