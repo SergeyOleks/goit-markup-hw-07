@@ -13,5 +13,13 @@
     &__web {
         color: var(--text-color-buttonlink);
     }
+
+    &__header{
+        margin-top: 24px;
+    }
+
+    &--footer{
+        color: var(--backgrount-color);
+    }
 }
 
